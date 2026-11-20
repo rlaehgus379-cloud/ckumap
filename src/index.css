@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --cku-teal: #006272;
+  --cku-teal-hover: #004d59;
+  --cku-teal-soft: #eaf4f6;
+  --cku-teal-border: #b8dce2;
+  --surface-canvas: #f8fafb;
+  --surface-card: #ffffff;
+  --border-hairline: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    font-family: 'Plus Jakarta Sans', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-mono-num {
+  font-family: 'JetBrains Mono', 'Plus Jakarta Sans', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle clean scrollbar for sidebar and notice list */
+.cku-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.cku-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.cku-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+.cku-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
